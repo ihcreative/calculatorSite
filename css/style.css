@@ -1,0 +1,221 @@
+* {
+	margin:0; 
+	padding:0; 
+	}
+#testId { background:red; border: 1px solid black; padding: 20px; }	
+	
+body {
+	background: #222; 
+	color: #e2e2e2; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300; 
+	font-size: 62.5%  /* 1em = 10px */
+	text-shadow: 0px 2px 2px #080808; 
+	}
+ul { list-style:none; }
+a {
+	text-decoration:none;
+	color: #080808;		
+	}
+a:hover, a:active {
+	text-decoration:none;
+	color: #1d7373;		
+	}
+	
+/* Fields */
+.calcName {
+	font-size: 1.4em;
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	}
+input {}
+input:required:invalid, input:focus:invalid {
+  background:red;
+  -moz-box-shadow: none;
+	}
+.currencySelect {
+  background: transparent;
+  -webkit-appearance: none;
+	font-size: 1.2em;
+	height: 36px;
+	display: block;
+	float: left;
+	color: #7dc9cb;
+  border: 1px solid #2a2a2a;
+	border-radius: 0;
+  padding: 3px 10px;
+  margin: 7px 6px 0 0;
+  }
+.moneyTotal {
+	background-color: #222;
+	font-size: 1.0em;
+	height: 36px;
+	width: 8em;
+	display: block;
+	float: left;
+	color: #7dc9cb;
+  border: 1px solid #2a2a2a;
+  padding: 3px 6px;
+  margin: 7px 6px 0 0;
+	}
+.total .labelValue, 
+.total .moneyValue {
+	display: block;
+	float: left;
+	text-align: left;
+	width: auto;
+	}
+.labelValue, 
+.moneyValue  {
+	background-color: #f3f6f3;
+	font-size: 1.0em;
+	height: 36px;
+	display: block;
+	float: left;
+	color: 393939;
+  padding: 3px 6px;
+  border: 1px solid #d8d5d8;
+	}
+.moneyValue { 
+	width: 8em;
+	margin: 10px 6px 10px 10px; 
+	}
+.labelValue { 
+	width: 20em;
+	margin: 10px 0; 
+	}
+.moneyValue:hover, 
+.moneyValue:active {
+	background: #e2e2e2;
+	border: 1px solid #469092;
+	}
+
+/* Rows 
+where do i store the content?
+Fix alignment on static entry row
+Fix % change on static entry row 
+Make pressing entery be an add, no need for having button
+allow for keyboard nav, edit, delete
+edit on click of row
+*/
+.total { 
+	color: #e3e2d4;
+	background: #121212;
+	border-bottom: 1px solid #2d2f2d;
+	display: block; 
+	position: fixed; 
+	z-index: 100;
+	top: 0px; 
+	right: 0; 
+	left: 0; 
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	padding-left: 20px;
+	}
+.coreContainer {
+	display: block; 
+	position: absolute; 
+	top: 50px; 
+	right: 0; 
+	left: 0; 
+	bottom: 0; 
+	color: #1b435e;
+	}
+.tag {
+	cursor: move;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 56px;
+	margin: 10px 20px;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+	background-color: #e2e2e2; 
+	}
+.tag:hover { background: #7dc9cb; }
+.tag:focus { background: #d9f8ba; }
+.new {
+	background: #c9f150;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 56px;
+	margin: 10px 20px;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; 
+	}
+	
+/* Buttons */
+.button {
+  background-color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #e2e2e2;
+  font-size: 13px;
+  text-decoration: none;
+  vertical-align: middle;
+  float: right;
+  border: none;
+  margin: 18px 4px 0 0;
+  padding: 2px 6px;
+  }
+.green {
+	margin-right: 10px;
+	}
+.button:hover {
+	background: rgba(29,116,116,0.47);
+	color: #e2e2e2; 
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	}
+.button:active {
+	background: #32cccc;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	}
+.red:hover, 
+.red:active, 
+.tag:focus .red,
+.tag:active .red,
+.tag:hover .red  { 
+	color: #96230c; 
+	}
+.green:hover, 
+.green:active,
+.tag:focus .green,
+.tag:active .green,
+.tag:hover .green,
+.new .green { 
+	color: #5b7d04; 
+	}
+
+/* Bottom Nav 
+ Add icons
+*/
+nav {
+	background: #080808; 
+	position: fixed;
+	z-index: 200; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	height: 60px; 
+	display: block;
+	text-align: center;
+	}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+nav ul a {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	width: 25%;
+	height: 100%;
+	border: 1px solid #222;
+	float: left;
+	padding-top: 20px;
+	color: #e3e2d4;
+	}

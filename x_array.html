@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lorem</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script>
+		function init()
+		{
+			animals = {}; // Same as animals = newArray();
+			animals["land"] = ["Dog", "Elephant", "Cat", "Chicken"];
+			animals["water"] = new Array("Shark", "Fish", "Whale", "Dolphin");
+			animals[4] = "Monkey";
+			animals["other"] = "Pig";
+			
+			console.log(animals);
+			
+			colors = new Array();
+			colors = new Array("red", "yellow", "pink", "black");
+			
+			document.write(animals[1] + "<br/>");			
+			document.write(animals.land[1] + animals.water + "<br/>");
+			document.write(animals.land.slice(0,2) + "<br/>"); //0 and 1, omit 2
+			document.write(animals.water.pop() + "<br/>");
+			
+			//colors.reverse();
+			//document.write(colors + "<br/>");
+			
+			//animals.land.shift();
+			//document.write(animals.land + ",test" + "<br/>");
+			
+			//colors.unshift("Add here");
+			//document.write(colors + "<br/>");
+			
+		}
+	</script>
+</head>
+
+<body onload="init()">
+	<h1>Learning JavaScript</h1> 
+	<p>test</p>
+
+
+</body>
+</html>
