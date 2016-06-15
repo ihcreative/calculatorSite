@@ -23,10 +23,6 @@ a:hover, a:active {
 	}
 	
 /* Fields */
-.calcName {
-	font-size: 1.4em;
-	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	}
 input {}
 input:required:invalid, input:focus:invalid {
   background:red;
@@ -44,6 +40,14 @@ input:required:invalid, input:focus:invalid {
 	border-radius: 0;
   padding: 3px 10px;
   margin: 7px 6px 0 0;
+  }
+.calcName {
+	font-size: 1.4em;
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	height: 36px;
+	width: 300px;
+	padding: 3px 6px;
+  	margin: 7px 6px 0 0;
   }
 .moneyTotal {
 	background-color: #222;
