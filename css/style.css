@@ -5,27 +5,29 @@
 #testId { background:red; border: 1px solid black; padding: 20px; }	
 	
 body {
-	background: #222; 
+	background: #78CAAE ; 
 	color: #e2e2e2; 
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300; 
-	font-size: 62.5%  /* 1em = 10px */
+	font-size: 2.0em;
 	text-shadow: 0px 2px 2px #080808; 
-	}
-ul { list-style:none; }
+}
+ul { 
+	list-style: none; 
+}
 a {
 	text-decoration:none;
-	color: #080808;		
-	}
+}
 a:hover, a:active {
 	text-decoration:none;
 	color: #1d7373;		
-	}
+}
 	
 /* Fields */
 input {}
 input:required:invalid, input:focus:invalid {
-  background:red;
+  background: pink;
+  border: 1px solid red;
   -moz-box-shadow: none;
 	}
 .currencySelect {
