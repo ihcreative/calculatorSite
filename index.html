@@ -9,7 +9,7 @@
 <body> 
 <form ondrop="drop(event)" ondragover="allowDrop(event)">  
 	<header>
-		<section class="total">	
+		<section class="topBar">	
 			<!-- Currency selector -->
 			<select class="currencySelect">	  
 			  <option value="American Dollar">$</option>
@@ -51,8 +51,8 @@
 	  </section>
 	    
 	   <section id="drag3" class="tag" tabindex="0" draggable="true" ondragstart="drag(event)">
-			<input name="numeric" type="text" class="moneyValue" pattern="^((\d+)|(\d{1,3})(\,\d{3}|)*)(\.\d{2}|)$" placeholder="Amount" required>
-			<input name="labelName" type="text" class="labelValue"/>
+			<input name="numeric" type="text" class="moneyValue" pattern="^((\d+)|(\d{1,3})(\,\d{3}|)*)(\.\d{2}|)$" placeholder="Amount" required value="45.79">
+			<input name="labelName" type="text" class="labelValue" value="Taco's with Ian"/>
 			<input type="button" class="green button" value="&#10004; Save" onclick="calculate(this.form);" >
 			<input type="button" class="red button" value="X Remove" onclick="remove(this.parent)">	
 
@@ -65,10 +65,10 @@
 	 
 	<nav> <!-- Need help making all changes happen on this page via a slide in animation -->
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Tips</a></li>
-			<li><a href="#">Settings</a></li>
-			<li><a href="#">Share</a></li>
+			<li><a class="active-tab tab1" href="#">Calculate</a></li>
+			<li><a class="tab2" href="#">Tips</a></li>
+			<li><a class="tab3" href="#">Settings</a></li>
+			<li><a class="tab4" href="#">Share</a></li>
 		</ul>
 	</nav>
 </form> 	
